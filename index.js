@@ -123,10 +123,10 @@ const buscarTipoSangue = () => {
   lista +=
     "-----------------------------------------------------------------\n";
   if (doadorPorTipo.length === 0) {
-    console.log("Nenhum doador encontrado com o tipo sanguíneo especificado.");
+    alert("Nenhum doador encontrado com o tipo sanguíneo especificado.");
   } else {
-    for (let i = 0; i < arrayDoadores.length; i++) {
-      const doador = arrayDoadores[i];
+    for (let i = 0; i < doadorPorTipo.length; i++) {
+      const doador = doadorPorTipo[i];
       lista += `${doador.nome1.padEnd(17)} | ${doador.idade1
         .toString()
         .padStart(5)} | ${doador.peso1
@@ -156,10 +156,10 @@ const buscarPorData = () => {
   lista +=
     "-----------------------------------------------------------------\n";
   if (dataUltimaDoacao.length === 0) {
-    console.log("Nenhum doador encontrado na data especificada.");
+    alert("Nenhum doador encontrado na data especificada.");
   } else {
-    for (let i = 0; i < arrayDoadores.length; i++) {
-      const doador = arrayDoadores[i];
+    for (let i = 0; i < dataUltimaDoacao.length; i++) {
+      const doador = dataUltimaDoacao[i];
       lista += `${doador.nome1.padEnd(17)} | ${doador.idade1
         .toString()
         .padStart(5)} | ${doador.peso1
