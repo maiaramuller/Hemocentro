@@ -105,7 +105,7 @@ const listarDoadores = () => {
   lista +=
     "-----------------------------------------------------------------\n";
 
-  console.log(lista);
+  prompt(lista);
   menu();
 };
 
@@ -139,7 +139,7 @@ const buscarTipoSangue = () => {
   lista +=
     "-----------------------------------------------------------------\n";
 
-  console.log(lista);
+  prompt(lista);
   menu();
 };
 
@@ -172,12 +172,11 @@ const buscarPorData = () => {
   lista +=
     "-----------------------------------------------------------------\n";
 
-  console.log(lista);
+  prompt(lista);
   menu();
 };
 const sair = () => {
   alert("Programa encerrado, volte sempre!");
-  menu();
 };
 
 menu();
